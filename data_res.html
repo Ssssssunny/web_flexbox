@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-layout</title>
+	<style type="text/css">
+		.demo-wrap{
+	border: 2px solid #ddd;
+	background: #f5f5f5;
+	padding: 6px;
+}
+
+.demo{
+	width: 100%;
+ 
+	/*flex布局（作用于容器）*/
+	display: flex;
+ 
+	/*两端对齐（作用于容器）*/
+	justify-content: space-around;
+ 
+	/*侧轴方向对齐方式（作用于容器）*/
+	align-items: flex-end;
+ 
+	/*换行（作用于容器）*/
+	flex-wrap: wrap;
+}
+
+.demo .item-left{
+	width: 320px;
+	height: 320px;
+	background: #444;
+	margin-bottom: 20px;
+}
+.demo .item-right{
+	width: auto;
+	min-width:450px;
+	height: 320px;
+	background: #444;
+	margin-bottom: 20px;
+}
+		</style>
+</head>
+<body>
+	<div class="demo-wrap">
+	<div class="demo">
+		<div class="item-left"></div>
+		<div class="item-right"></div>
+	</div>
+</div>
+
+<div class="demo-wrap">
+	<div class="demo">
+		<div class="item-left"></div>
+		<div class="item-right"></div>
+	</div>
+</div>
+
+<div class="demo-wrap">
+	<div class="demo">
+		<div class="item-left"></div>
+		<div class="item-right"></div>
+	</div>
+</div>
+</body>
+</html>
